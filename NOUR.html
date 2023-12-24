@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJRCT1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        background: linear-gradient(#111, #666);
+        color: #fff;
+        /* height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+      .container,
+      .container2,
+      .container4 {
+        width: 90%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+      }
+      nav .logo {
+        color: #fff;
+        text-decoration: none;
+        font-size: 28px;
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+      nav ul li {
+        display: inline-block;
+        margin: 0 6px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      nav ul li a:hover {
+        color: #555;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+      }
+      .content .text {
+        width: 45%;
+      }
+      .content .text h2 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .content .text p {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 10px;
+        letter-spacing: 1px;
+      }
+      .content .image {
+        width: 45%;
+      }
+      .content .image img {
+        width: 100%;
+      }
+      @media (max-width: 480px) {
+        .container2,
+        .container {
+          height: auto;
+          width: 100%;
+        }
+
+        .content {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .content .text h2 {
+          font-size: 22px;
+          padding: 15px;
+        }
+        .content .text p {
+          font-size: 15px;
+        }
+
+        .content .image,
+        .content .text {
+          width: 80%;
+        }
+        ul{
+          display: none;
+        }
+      }
+
+      /* 222222222222222222222222222222222222 */
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2em;
+      }
+
+      .product {
+        background-color: #7777;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 1em;
+        padding: 1em;
+        width: 300px;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      .product img {
+        width: 280px;
+        height: 280px;
+      }
+      .product p {
+        padding: 5px;
+      }
+      .product button {
+        width: 100px;
+        height: 35px;
+        margin: 10px auto;
+        border-radius: 20px;
+        border-style: none;
+      }
+      /* 4444444444444444444444444444444444444444444444 */
+      .container4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        color: #111;
+        width: 80%;
+        margin: 2em auto;
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> NOUR STORE</a>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+          <li><a href="#cotact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="text">
+          <h2>NOUR STORE ,RUNNING SHOES</h2>
+          <p>
+            This store contain the best shoes with affordable price,
+            please take a look, our customers.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="https://imgs.search.brave.com/w0b-khPJnt3Wc6QbMnuv3FMam0vMMq5sAxGGa5QzEY0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/YXNoaW9uLXNob2Vz/LXNuZWFrZXJzXzEy/MDMtNzUyOS5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2222222222222222222222222222 -->
+    <div class="container2 " id="about">
+      <div class="content">
+        <div class="text">
+          <h2>ABOUT US</h2>
+          <p>
+            if you like any product you can contact us
+            by the steps in there with your name,email and if there 
+            is any messege we are waiting for it. Don't forget that 
+            we need your support.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="https://images.asos-media.com/products/new-balance-530-trainers-in-white-silver/204594197-1-white?$n_750w$&wid=750&fit=constrain" />
+        </div>
+      </div>
+    </div>
+    <!-- 333333333333333333333333333333333 -->
+    <section>
+      <div class="product" id="product">
+        <img
+          src="https://contents.mediadecathlon.com/p2606919/k$a531927e5c71c12f4d3edac227199f78/jogflow-5001-men-s-running-shoes-white-blue-red.jpg?format=auto&quality=40&f=800x800"
+          alt="Knee-Hi"
+        />
+        <h2>Knee-Hi</h2>
+        <p>Stylish, Comfortable, Knee-Hi.</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.asos-media.com/products/new-balance-530-trainers-in-white-silver/204594197-1-white?$n_750w$&wid=750&fit=constrain" alt="STRUT" />
+        <h2>STRUT</h2>
+        <p>Stylish, Comfortable, STRUT.</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/27d6d436-b35e-43f1-9a33-e41485d9006a/omni-multi-court-big-kids-indoor-court-shoes-xbrQcw.png" alt="Stiletto" />
+        <h2>Stiletto</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://contents.mediadecathlon.com/p2606935/k$47dcc74e3c26ed05132535c90a4c4713/active-.jpg?format=auto&quality=40&f=800x800" alt="PUMP" />
+        <h2>PUMP</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/718UPMoCApL._AC_SX695_.jpg" alt="Best Kept Secret" />
+        <h2>Best Kept Secret</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://wayupsports.com/cdn/shop/products/HQ3789_Main.jpg?v=1695560000&width=800" alt="Catwalk" />
+        <h2>Catwalk</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://wayupsports.com/cdn/shop/products/HQ3789_Main.jpg?v=1695560000&width=800" alt="PUMP" />
+        <h2>PUMP</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://wayupsports.com/cdn/shop/files/216275-GRY_6827b290-89dd-4764-a775-e199321a603d.jpg?v=1697981460&width=800" alt="WhereWhen" />
+        <h2>WhereWhen</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://f.nooncdn.com/p/pzsku/ZDCC95F4504E42F121982Z/45/_/1699789136/368923df-f578-4cb6-9e3d-abf6333056e4.jpg?format=avif&width=240" alt="Solina" />
+        <h2>Solina</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.asos-media.com/products/new-balance-530-trainers-in-off-white-and-grey-exclusive-to-asos/204936408-1-offwhite?$n_320w$&wid=317&fit=constrain" alt="Catwalk" />
+        <h2>Catwalk</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://wayupsports.com/cdn/shop/products/415445-102_Main.jpg?v=1696928351&width=700" alt="WhereWhen" />
+        <h2>WhereWhen</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.asos-media.com/products/new-balance-530-trainers-in-white-silver/204594197-1-white?$n_750w$&wid=750&fit=constrain" alt="Slipper" />
+        <h2>Slipper</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+    <!-- 4444444444444444444444444444444 -->
+    <div class="container4" id="cotact">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy;Simple E-commerce dev by NOUR</p>
+    </footer>
+  </body>
+</html>
